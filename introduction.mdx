@@ -1,0 +1,124 @@
+---
+title: Introduction to Paperguide
+description: Discover Paperguide, an AI-powered research platform that streamlines the research process for students, researchers, and academics with tools for discovery, analysis, and management.
+---
+
+## Overview
+
+Paperguide revolutionizes research with AI-powered tools that handle discovery, analysis, organization, and writing. You upload papers, get smart summaries, manage references effortlessly, and generate insights faster. Built for efficiency, it integrates reading, writing, and collaboration into one platform.
+
+<Columns cols={3}>
+  <Card title="Smart Discovery" icon="search" href="/docs/discovery">
+    Find relevant papers using AI-driven search and recommendations.
+  </Card>
+  <Card title="Intelligent Analysis" icon="zap" href="/docs/analysis">
+    Extract key insights, summaries, and connections automatically.
+  </Card>
+  <Card title="Unified Management" icon="database" href="/docs/management">
+    Organize references, notes, and projects in a single workspace.
+  </Card>
+</Columns>
+
+## Key Benefits and Productivity Enhancements
+
+Paperguide boosts your productivity by automating repetitive tasks. You save hours on literature reviews, citation formatting, and insight generation. Key enhancements include real-time collaboration, cross-platform sync, and customizable AI workflows.
+
+<Callout kind="tip">
+  Start with the free tier to experience 80% faster research workflows.
+</Callout>
+
+| Benefit              | Traditional Research | Paperguide             |
+|----------------------|----------------------|------------------------|
+| Literature Search    | Manual queries       | AI recommendations     |
+| Summarization        | Read full papers     | Instant key extracts   |
+| Reference Management | Spreadsheet chaos    | Auto-organized library |
+| Writing Assistance   | Manual drafting      | AI-generated outlines  |
+
+<Expandable title="Advanced Productivity Features" default-open="false">
+
+You access features like semantic search across your library, auto-citation generation in multiple styles, and collaborative annotations. Integrate with tools via the Paperguide API for custom workflows.
+
+</Expandable>
+
+## Target Audience and Use Cases
+
+Paperguide serves students, researchers, and academics with tailored workflows.
+
+<Tabs>
+  <Tab title="Students" icon="graduation-cap">
+    You conduct thesis research efficiently.
+    
+    <Steps>
+      <Step title="Search Topics" icon="search">
+        Enter keywords for curated paper lists.
+      </Step>
+      <Step title="Summarize Findings" icon="file-text">
+        Generate one-page summaries.
+      </Step>
+      <Step title="Build Bibliography" icon="book">
+        Export citations in APA or MLA.
+      </Step>
+    </Steps>
+  </Tab>
+  
+  <Tab title="Researchers" icon="microscope">
+    You analyze large datasets of papers.
+    
+    ```mermaid
+    graph LR
+        A[Upload Papers] --> B[AI Analysis]
+        B --> C[Insight Graph]
+        C --> D[Export Report]
+    ```
+  </Tab>
+  
+  <Tab title="Academics" icon="award">
+    You collaborate on grants and publications.
+    
+    <Callout kind="success">
+      Share libraries with co-authors for real-time edits.
+    </Callout>
+  </Tab>
+</Tabs>
+
+## Quick Start
+
+Install the Paperguide SDK to integrate into your apps.
+
+<CodeGroup tabs="npm,yarn,pnpm">
+  ```bash
+  npm install @paperguide/sdk
+  ```
+  ```bash
+  yarn add @paperguide/sdk
+  ```
+  ```bash
+  pnpm add @paperguide/sdk
+  ```
+</CodeGroup>
+
+<Steps>
+  <Step title="Initialize SDK" icon="code">
+    ```javascript
+    import { Paperguide } from '@paperguide/sdk';
+    
+    const pg = new Paperguide({ apiKey: 'YOUR_API_KEY' });
+    ```
+  </Step>
+  <Step title="Search Papers" icon="search">
+    ```javascript
+    const results = await pg.search('machine learning ethics');
+    console.log(results.papers);
+    ```
+  </Step>
+  <Step title="Analyze Document" icon="zap">
+    ```javascript
+    const summary = await pg.analyze('path/to/paper.pdf');
+    console.log(summary.keyInsights);
+    ```
+  </Step>
+</Steps>
+
+<Card title="Next Steps" icon="arrow-right" href="/docs/quickstart" horizontal>
+  Dive into detailed guides and API reference.
+</Card>
