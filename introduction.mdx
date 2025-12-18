@@ -1,20 +1,26 @@
 ---
 title: Introduction to Paperguide
-description: Discover Paperguide, an AI-powered research platform that streamlines the research process for students, researchers, and academics with tools for discovery, analysis, and management.
+description: >-
+  Discover Paperguide, an AI-powered research platform that streamlines the
+  research process for students, researchers, and academics with tools for
+  discovery, analysis, and management.
 ---
-
 ## Overview
 
 Paperguide revolutionizes research with AI-powered tools that handle discovery, analysis, organization, and writing. You upload papers, get smart summaries, manage references effortlessly, and generate insights faster. Built for efficiency, it integrates reading, writing, and collaboration into one platform.
 
-<Columns cols={3}>
-  <Card title="Smart Discovery" icon="search" href="/docs/discovery">
+<Image src="https://blob-cdn.documentation.ai/org-e8547f0a-7343-4c57-99ea-0439e97c4d0e/doc-d9d603f3-5b1a-4a9a-ae05-ddb8d37b83e6/1766065174859-9os9hvsyu6o-Screenshot-2025-12-18-at-7-09-28-PM.heic?q=85&fm=auto&auto=compress%2Cformat" alt="" />
+
+<Columns cols="3">
+  <Card title="Smart Discovery" href="/docs/discovery" icon="search" horizontal="false">
     Find relevant papers using AI-driven search and recommendations.
   </Card>
-  <Card title="Intelligent Analysis" icon="zap" href="/docs/analysis">
+
+  <Card title="Intelligent Analysis" href="/docs/analysis" icon="zap" horizontal="false">
     Extract key insights, summaries, and connections automatically.
   </Card>
-  <Card title="Unified Management" icon="database" href="/docs/management">
+
+  <Card title="Unified Management" href="/docs/management" icon="database" horizontal="false">
     Organize references, notes, and projects in a single workspace.
   </Card>
 </Columns>
@@ -23,21 +29,19 @@ Paperguide revolutionizes research with AI-powered tools that handle discovery, 
 
 Paperguide boosts your productivity by automating repetitive tasks. You save hours on literature reviews, citation formatting, and insight generation. Key enhancements include real-time collaboration, cross-platform sync, and customizable AI workflows.
 
-<Callout kind="tip">
+<Callout kind="tip" collapsed="false">
   Start with the free tier to experience 80% faster research workflows.
 </Callout>
 
 | Benefit              | Traditional Research | Paperguide             |
-|----------------------|----------------------|------------------------|
+| -------------------- | -------------------- | ---------------------- |
 | Literature Search    | Manual queries       | AI recommendations     |
 | Summarization        | Read full papers     | Instant key extracts   |
 | Reference Management | Spreadsheet chaos    | Auto-organized library |
 | Writing Assistance   | Manual drafting      | AI-generated outlines  |
 
 <Expandable title="Advanced Productivity Features" default-open="false">
-
-You access features like semantic search across your library, auto-citation generation in multiple styles, and collaborative annotations. Integrate with tools via the Paperguide API for custom workflows.
-
+  You access features like semantic search across your library, auto-citation generation in multiple styles, and collaborative annotations. Integrate with tools via the Paperguide API for custom workflows.
 </Expandable>
 
 ## Target Audience and Use Cases
@@ -47,23 +51,25 @@ Paperguide serves students, researchers, and academics with tailored workflows.
 <Tabs>
   <Tab title="Students" icon="graduation-cap">
     You conduct thesis research efficiently.
-    
+
     <Steps>
-      <Step title="Search Topics" icon="search">
+      <Step title="Search Topics" icon="search" title-type="p">
         Enter keywords for curated paper lists.
       </Step>
-      <Step title="Summarize Findings" icon="file-text">
+
+      <Step title="Summarize Findings" icon="file-text" title-type="p">
         Generate one-page summaries.
       </Step>
-      <Step title="Build Bibliography" icon="book">
+
+      <Step title="Build Bibliography" icon="book" title-type="p">
         Export citations in APA or MLA.
       </Step>
     </Steps>
   </Tab>
-  
+
   <Tab title="Researchers" icon="microscope">
     You analyze large datasets of papers.
-    
+
     ```mermaid
     graph LR
         A[Upload Papers] --> B[AI Analysis]
@@ -71,11 +77,11 @@ Paperguide serves students, researchers, and academics with tailored workflows.
         C --> D[Export Report]
     ```
   </Tab>
-  
+
   <Tab title="Academics" icon="award">
     You collaborate on grants and publications.
-    
-    <Callout kind="success">
+
+    <Callout kind="success" collapsed="false">
       Share libraries with co-authors for real-time edits.
     </Callout>
   </Tab>
@@ -85,33 +91,37 @@ Paperguide serves students, researchers, and academics with tailored workflows.
 
 Install the Paperguide SDK to integrate into your apps.
 
-<CodeGroup tabs="npm,yarn,pnpm">
+<CodeGroup show-lines="true" tabs={[]}>
   ```bash
   npm install @paperguide/sdk
   ```
+
   ```bash
   yarn add @paperguide/sdk
   ```
+
   ```bash
   pnpm add @paperguide/sdk
   ```
 </CodeGroup>
 
 <Steps>
-  <Step title="Initialize SDK" icon="code">
+  <Step title="Initialize SDK" icon="code" title-type="p">
     ```javascript
     import { Paperguide } from '@paperguide/sdk';
-    
+
     const pg = new Paperguide({ apiKey: 'YOUR_API_KEY' });
     ```
   </Step>
-  <Step title="Search Papers" icon="search">
+
+  <Step title="Search Papers" icon="search" title-type="p">
     ```javascript
     const results = await pg.search('machine learning ethics');
     console.log(results.papers);
     ```
   </Step>
-  <Step title="Analyze Document" icon="zap">
+
+  <Step title="Analyze Document" icon="zap" title-type="p">
     ```javascript
     const summary = await pg.analyze('path/to/paper.pdf');
     console.log(summary.keyInsights);
@@ -119,6 +129,7 @@ Install the Paperguide SDK to integrate into your apps.
   </Step>
 </Steps>
 
-<Card title="Next Steps" icon="arrow-right" href="/docs/quickstart" horizontal>
+<Card title="Next Steps" href="/docs/quickstart" icon="arrow-right">
   Dive into detailed guides and API reference.
 </Card>
+
