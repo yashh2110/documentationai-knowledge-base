@@ -28,6 +28,11 @@
                 "title": "Quick Start",
                 "path": "quickstart",
                 "icon": "zap"
+              },
+              {
+                "title": "inti Start",
+                "path": "inti",
+                "icon": "zap"
               }
             ]
           },
